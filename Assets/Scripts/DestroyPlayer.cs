@@ -18,6 +18,7 @@ public class DestroyPlayer : MonoBehaviour
 
     }
 
+    // To Restart game when colliding with barrels
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))

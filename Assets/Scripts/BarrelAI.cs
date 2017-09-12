@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+// Nav Mesh - Not using
+
     public class BarrelAI : MonoBehaviour
     {
         public Transform target;

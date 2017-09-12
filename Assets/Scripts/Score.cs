@@ -25,6 +25,7 @@ public class Score : MonoBehaviour
         Shortcuts();
     }
 
+    // Adds to score everytime the barrels hit the oil barrel
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Oil Barrel"))
@@ -35,6 +36,7 @@ public class Score : MonoBehaviour
         }
     }
 
+    // Setting score and win text
     void SetCountText()
     {
         countText.text = "Score: " + count;
@@ -44,6 +46,7 @@ public class Score : MonoBehaviour
         }
     }
 
+    // To restart or exit game
     void Shortcuts()
     {
         if (Input.GetKey(KeyCode.Escape))

@@ -39,9 +39,8 @@ public class BarrelsSpawn : MonoBehaviour
         // run whatever is here first
         hasBarreled = true;
 
-        // Spawn the bullet
-        SpawnBalls();
-
+        // Spawn the barrel
+        SpawnBarrels();
 
         yield return new WaitForSeconds(spawnInterval); // wait a few seconds
 
@@ -49,7 +48,7 @@ public class BarrelsSpawn : MonoBehaviour
         hasBarreled = false;
     }
 
-    void SpawnBalls()
+    void SpawnBarrels()
     {
         for (int i = 0; i < spawnAmount; i++)
         {
