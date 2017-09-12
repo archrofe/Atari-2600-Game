@@ -5,7 +5,7 @@ using UnityEngine;
 public class BarrelsSpawn : MonoBehaviour
 {
     public GameObject[] spawnPrefabs;
-    public float spawnRadius = 1f;
+    public float spawnRadius = 3f;
     public int spawnAmount = 1;
     public int currentSpawn;
     public int maxSpawn = 10;
